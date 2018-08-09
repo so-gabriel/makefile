@@ -6,5 +6,7 @@ x = pd.read_csv(sys.argv[1])
 
 plot = sns.barplot('word', 'count', data=x.head(10))
 
+# comment
+
 fig = plot.get_figure()
 fig.savefig(sys.argv[2])
